@@ -1,3 +1,5 @@
+/* @override http://localhost:3000/assets/application.css?body=1 */
+
 /*
  * This is a manifest file that'll be compiled into application.css, which will include all the files
  * listed below.
@@ -11,3 +13,32 @@
  *= require_self
  *= require_tree .
  */
+
+body {
+	background-color: #dbdbdb;
+}
+
+h1 {
+	font-size: 40px;
+	font-family: 'ABeeZee', sans-serif;
+}
+
+* {
+	font-family: 'ABeeZee', sans-serif;
+}
+
+a {
+	padding: 5px;
+	color: #df7741 !important;	
+}
+
+a:hover {
+	background-color: #dea780 !important; 
+	color:  white !important;
+}
+
+input {
+	border: 1px solid #cbcbcb;
+	padding: 10px 8px;
+	color: #ff9766;
+}
