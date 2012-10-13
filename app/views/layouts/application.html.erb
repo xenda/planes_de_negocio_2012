@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>PlanesDeNegocio</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<h1>Built in 13 minutes</h1>
+<%= link_to "Registrar Emprendedor/Sabio", new_entrepreneur_path %>
+<%= link_to "Registrar Plan de Negocio", new_business_plane_path %>
+<%= link_to "Buscar Plan de Negocios", "/search" %>
+
+
+<%= yield %>
+
+</body>
+</html>

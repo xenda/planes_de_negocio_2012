@@ -1,0 +1,36 @@
+<h1>Searching business plans</h1>
+
+<%= form_tag "/search" do %>
+    <%= text_field_tag "title" %>
+    <%= submit_tag "Buscar" %>
+<% end %>
+
+<%- if @results %>
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Category</th>
+    <th>Vision</th>
+    <th>Acknowledgment</th>
+    <th>Duration</th>
+    <th>Total investment</th>
+    <th>Gross margin</th>
+    <th>Roi</th>
+    <th></th>
+  </tr>
+
+<% @results.each do |business_plane| %>
+  <tr>
+    <td><%= business_plane.title %></td>
+    <td><%= business_plane.category %></td>
+    <td><%= business_plane.vision %></td>
+    <td><%= business_plane.acknowledgment %></td>
+    <td><%= business_plane.duration %></td>
+    <td><%= business_plane.total_investment %></td>
+    <td><%= business_plane.gross_margin %></td>
+    <td><%= business_plane.roi %></td>
+    <td><%= link_to 'Show', business_plane %></td>
+  </tr>
+<% end %>
+</table>
+<% end %>

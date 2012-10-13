@@ -1,0 +1,53 @@
+<%= simple_form_for(@business_plane) do |f| %>
+  <% if @business_plane.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@business_plane.errors.count, "error") %> prohibited this business_plane from being saved:</h2>
+
+      <ul>
+      <% @business_plane.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+<div class="field">
+    <%= f.association :entrepreneur, :label_method => "first_name" %>
+  </div>
+  
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field">
+    <%= f.input :category, :collection => BusinessPlane::CATEGORIES %>
+  </div>
+  <div class="field">
+    <%= f.label :vision %><br />
+    <%= f.text_area :vision %>
+  </div>
+  <div class="field">
+    <%= f.label :acknowledgment %><br />
+    <%= f.text_area :acknowledgment %>
+  </div>
+  <div class="field">
+    <%= f.label :duration %><br />
+    <%= f.number_field :duration %>
+  </div>
+  <div class="field">
+    <%= f.label :total_investment %><br />
+    <%= f.text_field :total_investment %>
+  </div>
+  <div class="field">
+    <%= f.label :gross_margin %><br />
+    <%= f.text_field :gross_margin %>
+  </div>
+  <div class="field">
+    <%= f.label :roi %><br />
+    <%= f.text_field :roi %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

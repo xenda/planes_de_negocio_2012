@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  category: MyString
+  vision: MyText
+  acknowledgment: MyText
+  duration: 1
+  total_investment: 9.99
+  gross_margin: 9.99
+  roi: 9.99
+
+two:
+  title: MyString
+  category: MyString
+  vision: MyText
+  acknowledgment: MyText
+  duration: 1
+  total_investment: 9.99
+  gross_margin: 9.99
+  roi: 9.99

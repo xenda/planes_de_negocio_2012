@@ -1,0 +1,55 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>First name:</b>
+  <%= @entrepreneur.first_name %>
+</p>
+
+<p>
+  <b>Last name:</b>
+  <%= @entrepreneur.last_name %>
+</p>
+
+<p>
+  <b>Gender:</b>
+  <%= @entrepreneur.gender %>
+</p>
+
+<p>
+  <b>Document type:</b>
+  <%= @entrepreneur.document_type %>
+</p>
+
+<p>
+  <b>Document number:</b>
+  <%= @entrepreneur.document_number %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @entrepreneur.email %>
+</p>
+
+<p>
+  <b>Cellphone:</b>
+  <%= @entrepreneur.cellphone %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @entrepreneur.address %>
+</p>
+
+<p>
+  <b>Born at:</b>
+  <%= @entrepreneur.born_at %>
+</p>
+
+<p>
+  <b>Password:</b>
+  <%= @entrepreneur.password %>
+</p>
+
+
+<%= link_to 'Edit', edit_entrepreneur_path(@entrepreneur) %> |
+<%= link_to 'Back', entrepreneurs_path %>

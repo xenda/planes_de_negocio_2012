@@ -1,0 +1,54 @@
+<%= simple_form_for(@entrepreneur) do |f| %>
+  <% if @entrepreneur.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@entrepreneur.errors.count, "error") %> prohibited this entrepreneur from being saved:</h2>
+
+      <ul>
+      <% @entrepreneur.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </div>
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %>
+  </div>
+  <div class="field">
+    <%= f.input :gender, :collection => ["Male", "Female"] %>
+  </div>
+  <div class="field">
+    <%= f.input :document_type, :collection => Entrepreneur::DOCUMENT_TYPES.values %>
+  </div>
+  <div class="field">
+    <%= f.label :document_number %><br />
+    <%= f.text_field :document_number %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.text_field :email %>
+  </div>
+  <div class="field">
+    <%= f.label :cellphone %><br />
+    <%= f.text_field :cellphone %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :born_at %><br />
+    <%= f.datetime_select :born_at %>
+  </div>
+  <div class="field">
+    <%= f.input :password %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

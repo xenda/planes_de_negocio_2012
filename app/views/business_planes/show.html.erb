@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @business_plane.title %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @business_plane.category %>
+</p>
+
+<p>
+  <b>Vision:</b>
+  <%= @business_plane.vision %>
+</p>
+
+<p>
+  <b>Acknowledgment:</b>
+  <%= @business_plane.acknowledgment %>
+</p>
+
+<p>
+  <b>Duration:</b>
+  <%= @business_plane.duration %>
+</p>
+
+<p>
+  <b>Total investment:</b>
+  <%= @business_plane.total_investment %>
+</p>
+
+<p>
+  <b>Gross margin:</b>
+  <%= @business_plane.gross_margin %>
+</p>
+
+<p>
+  <b>Roi:</b>
+  <%= @business_plane.roi %>
+</p>
+
+
+<%= link_to 'Edit', edit_business_plane_path(@business_plane) %> |
+<%= link_to 'Back', business_planes_path %>
