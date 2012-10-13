@@ -18,13 +18,28 @@ body {
 	background-color: #dbdbdb;
 }
 
-h1 {
-	font-size: 40px;
-	font-family: 'ABeeZee', sans-serif;
+h1.title {
+	font: bold 60px 'ABeeZee', sans-serif;
+	margin: 0px;
 }
 
 * {
 	font-family: 'ABeeZee', sans-serif;
+}
+
+table {
+border-collapse: collapse;
+	color: #692729;
+	margin-top: 4em;
+	margin-bottom: 4em;
+}
+
+td {
+	padding: 10px;
+}
+
+tr:nth-child(2n){
+	background: #ffeee8;
 }
 
 a {
