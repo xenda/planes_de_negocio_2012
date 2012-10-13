@@ -6,9 +6,9 @@ class CreateBusinessPlanes < ActiveRecord::Migration
       t.text :vision
       t.text :acknowledgment
       t.integer :duration
-      t.decimal :total_investment, :scale => 10, :precision => 2
-      t.decimal :gross_margin, :scale => 10, :precision => 2
-      t.decimal :roi, :scale => 10, :precision => 2
+      t.decimal :total_investment, :scale => 2, :precision => 10
+      t.decimal :gross_margin, :scale => 2, :precision => 10
+      t.decimal :roi, :scale => 2, :precision => 10
       t.timestamps
     end
   end

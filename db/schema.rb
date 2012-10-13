@@ -19,9 +19,9 @@ ActiveRecord::Schema.define(:version => 20121013174318) do
     t.text     "vision"
     t.text     "acknowledgment"
     t.integer  "duration"
-    t.decimal  "total_investment", :precision => 2, :scale => 10
-    t.decimal  "gross_margin",     :precision => 2, :scale => 10
-    t.decimal  "roi",              :precision => 2, :scale => 10
+    t.decimal  "total_investment", :precision => 10, :scale => 2
+    t.decimal  "gross_margin",     :precision => 10, :scale => 2
+    t.decimal  "roi",              :precision => 10, :scale => 2
     t.datetime "created_at",                                                               :null => false
     t.datetime "updated_at",                                                               :null => false
     t.integer  "entrepreneur_id"
